@@ -18,9 +18,11 @@ class CreateTasksTable extends Migration
             $table->timestamps();
 
             $table->string('TODO');
-            $table->date('Done date');
+            $table->date('DoneDate');
             $table->date('DeadLine');
             $table->boolean('Done');
+            $table->string('userName')
+            $table->int('UserId')
         });
     }
 
