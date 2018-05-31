@@ -125,6 +125,8 @@ return [
          * Laravel Framework Service Providers...
          */
         Illuminate\Auth\AuthServiceProvider::class,
+        'Collective\Html\HtmlServiceProvider',
+
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
         Illuminate\Cache\CacheServiceProvider::class,
@@ -154,11 +156,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        todo\Providers\AppServiceProvider::class,
+        todo\Providers\AuthServiceProvider::class,
+        // todo\Providers\BroadcastServiceProvider::class,
+        todo\Providers\EventServiceProvider::class,
+        todo\Providers\RouteServiceProvider::class,
 
     ],
 
@@ -175,6 +177,8 @@ return [
 
     'aliases' => [
 
+        'Form' => 'Collective\Html\FormFacade',
+        'Html' => 'Collective\Html\HtmlFacade',
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
